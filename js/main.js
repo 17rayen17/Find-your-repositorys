@@ -3,7 +3,7 @@ let btnSearch = document.querySelector(".searchField button");
 let identity = document.querySelector(".identity");
 let noData = document.querySelector(".noData")
 let showCards = document.querySelector(".showCards");
-
+getReposiries();
 btnSearch.onclick = ()=>{
   identity.innerHTML = "";
   showCards.innerHTML = "";
@@ -12,7 +12,7 @@ btnSearch.onclick = ()=>{
 }
 window.location.href
 function getReposiries(){
-  fetch(`https://api.github.com/users/${username.value}/repos`,{method:"GET"})
+  fetch(`https://api.github.com/users/${username.value || "17rayen17"}/repos`)
   .then((res)=> res.json())
   .then((data)=>{
     if(data.length > 0){

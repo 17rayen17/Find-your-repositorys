@@ -77,7 +77,6 @@ nav .searchField button i {
   padding: 20px;
   margin-top: 15px;
   gap: 70px;
-  position: relative;
 }
 
 .container .identity {
@@ -87,7 +86,6 @@ nav .searchField button i {
   display: flex;
   flex-flow: column nowrap;
   gap: 20px;
-  position: fixed;
 }
 
 .container .identity button {
@@ -224,6 +222,44 @@ nav .searchField button i {
 
 .noData .loader:after {
   animation-delay: 1s;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  box-shadow: 0px 0px 8px 0px #8080809e;
+  background-color: black;
+}
+
+footer .links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .links a{
+  color: white;
+}
+
+footer .links a:nth-child(1){
+  color: #0077b5;
+  font-size: 20px;
+}
+footer .links a:nth-child(2){
+  color: white;
+  font-size: 20px;
+}
+footer .links a:nth-child(3){
+  color: white;
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+  font-size: 20px;
+}
+
+footer h1{
+  color: white;
+  font-size: 15px;
 }
 
 @keyframes push_401 {
