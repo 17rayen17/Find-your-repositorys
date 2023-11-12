@@ -77,6 +77,7 @@ nav .searchField button i {
   padding: 20px;
   margin-top: 15px;
   gap: 70px;
+  position: relative;
 }
 
 .container .identity {
@@ -86,6 +87,7 @@ nav .searchField button i {
   display: flex;
   flex-flow: column nowrap;
   gap: 20px;
+  position: fixed;
 }
 
 .container .identity button {
@@ -238,6 +240,9 @@ nav .searchField button i {
 @media (max-width: 850px){
   nav .searchField input{
     width: 210px;
+  }
+  .container .identity{
+    position: static;
   }
 }
 
