@@ -17,10 +17,10 @@ function getReposiries(){
   .then((data)=>{
     if(data.length > 0){
       identity.innerHTML = `<div>
-      <img src="${data[0]["owner"]["avatar_url"]}" alt="${data[0]["name"]}">
+      <img src="${data[0]["owner"]["avatar_url"]}" alt="${data[0]["owner"]["login"]}">
       <h1>${data[0]["owner"]["login"]}</h1>
       </div>
-      <button onclick="window.location.href ='${data[0]["html_url"]}'"><i class="fa-solid fa-eye"></i> Visit </button>`;
+      <button onclick="window.location.href ='${data[0]["owner"]["html_url"]}'"><i class="fa-solid fa-eye"></i> Visit </button>`;
       data.forEach((el,i) => {
         if(el.visibility === "public"){
           showCards.innerHTML += `<div class="cards">
