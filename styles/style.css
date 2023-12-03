@@ -23,6 +23,7 @@ body {
   text-rendering: optimizeSpeed;
   font-family: sans-serif;
   background-color: #0d1117;
+  position: relative;
 }
 
 nav {
@@ -225,6 +226,9 @@ nav .searchField button i {
 }
 
 footer{
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
